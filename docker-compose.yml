@@ -1,0 +1,16 @@
+version: "3.7"
+services:
+  smallandserver:
+    container_name: smalland-dedicated
+    restart: unless-stopped
+    build:
+      context: .
+      dockerfile: Dockerfile
+    env_file:
+      - .env
+    ports:
+      - "7777:7777/udp"
+    volumes:
+      - ./save_data:/home/steam/smalland/SMALLAND/Saved/SaveGames/Worlds
+volumes:
+  save_data:
