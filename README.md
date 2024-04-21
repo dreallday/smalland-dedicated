@@ -1,4 +1,4 @@
-# Game Server Docker Compose
+# Smalland Dedicated Server
 
 This repository contains the necessary files to set up a Smalland game server using Docker
 
